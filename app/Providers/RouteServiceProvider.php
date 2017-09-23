@@ -39,7 +39,28 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapCompanyRoutes();
+
         //
+    }
+
+    /**
+     * Define the "company" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapCompanyRoutes()
+    {
+        Route::group([
+            'middleware' => ['web', 'company', 'auth:company'],
+            'prefix' => 'company',
+            'as' => 'company.',
+            'namespace' => $this->namespace,
+        ], function ($router) {
+            require base_path('routes/company.php');
+        });
     }
 
     /**
