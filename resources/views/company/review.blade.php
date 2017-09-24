@@ -50,7 +50,7 @@
             </pre>
         </div>
         <div class="row">
-            <form>
+            <form action="./sub/subject">
                 <p><button type="submit" class="btn btn-primary">Submit</button></p>
             </form>
         </div>

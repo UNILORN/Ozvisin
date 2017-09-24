@@ -51,7 +51,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <a href='#' class="card">
+            <a href='./sub/subject' class="card">
                 <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/c.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">C言語</h4>
