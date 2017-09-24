@@ -24,7 +24,11 @@ Route::group(['prefix' => 'company'], function () {
   Route::post('/register', 'CompanyAuth\RegisterController@register');
 
   Route::get('/code', 'CompanyCode\CodeController@code')->name('code');
+
+  Route::get('/sub', 'CompanySub\CreateController@ichiran')->name('ichiran');
+  Route::get('/sub/subject', 'CompanySub\CreateController@subject')->name('subject');
   Route::get('/sub/create', 'CompanySub\CreateController@create')->name('create');
+
   Route::get('/review', 'CompanyReview\ReviewController@review')->name('review');
 
   Route::post('/password/email', 'CompanyAuth\ForgotPasswordController@sendResetLinkEmail')->name('password.request');
