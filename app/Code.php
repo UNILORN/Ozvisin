@@ -15,4 +15,8 @@ class Code extends Model
     public function subject(){
       return $this->belongsTo('App\Subject');
     }
+
+    public function review(){
+      return $this->hasMany('App\Review');
+    }
 }

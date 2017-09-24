@@ -41,4 +41,8 @@ class CreateController extends Controller
         $codes = Code::where("subject_id",$id)->get();
         return view('company.sub.subject', compact("codes"));
     }
+
+    public function review(){
+
+    }
 }
