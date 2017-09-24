@@ -43,6 +43,9 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li>
+                                    <a href="/subject">プログラミング言語一覧</a>
+                                </li>
+                                <li>
                                     <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
