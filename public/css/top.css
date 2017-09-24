@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+body {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 40px 0 0 0;
+}
+
+.navbar a {
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #FFF;
+  transition: 1.2s;
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+  color: #FFF;
+}
+
+.navbar-header a{
+  font-size: 42px;
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: bold;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/image/top.jpg");
+  background-size: cover;
+}
+
+.title {
+  position: relative;
+  margin-left: 46px;
+  top: 25%;
+  color: #FFF;
+  height: 200px;
+}
+
+.title h2 {
+  font-size: 46px;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+}
+
+.title p {
+  font-size: 16px;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+}
