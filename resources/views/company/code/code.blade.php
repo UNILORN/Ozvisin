@@ -94,7 +94,7 @@
             <a class="col-md-12" href="" target="_blank">Git url</a>
         </div>
         <div class="row">
-            <form>
+            <form action="./review">
                 <p><button type="submit" class="btn btn-primary">Review</button></p>
             </form>
         </div>
