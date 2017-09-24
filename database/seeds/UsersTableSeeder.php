@@ -17,9 +17,9 @@ class UsersTableSeeder extends Seeder
         $data = [];
         $data[] = [
             'id'=>1,
-            'name' => $faker->name,
-            'email' => $faker->email,
-            'password' => bcrypt('pass'),
+            'name' => "admin",
+            'email' => "admin@admin.admin",
+            'password' => bcrypt('admin'),
         ];
 
         DB::table('users')->insert($data);
