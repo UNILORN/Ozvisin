@@ -50,95 +50,17 @@
 
 		<div class="container">
 			<div class="row">
+				@foreach($subject as $value)
 				<div class="col">
-					<a href='subject/1' class="card">
-			  			<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/c.svg" alt="Card image cap">
+					<a href='/subject/{{$value->id}}' class="card">
+			  			<img class="card-img-top" src="" alt="" style="background-image:url('/image/{{$value->img}}');background-position: center;background-size: contain;background-repeat: no-repeat">
 			  			<div class="card-body">
-			    			<h4 class="card-title">C言語</h4>
-			    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    			<h4 class="card-title">{{$value->title}}</h4>
+			    			<p class="card-text">{{$value->detail}}</p>
 			  			</div>
 			  		</a>
 		  		</div>
-
-		  		<div class="col">
-					<a href='subject/2' class="card">
-			  		<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/c%2B%2B.svg" alt="Card image cap">
-			  			<div class="card-body">
-			    			<h4 class="card-title">C++</h4>
-			    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			  			</div>
-					</a>
-				</div>
-
-				<div class="col">
-					<a href='subject/3' class="card">
-		  				<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/java.svg" alt="Card image cap">
-		  				<div class="card-body">
-		    				<h4 class="card-title">Java</h4>
-		    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  				</div>
-		  			</a>
-		  		</div>
-
-		  		<div class="col">
-		  			<a href='subject/4' class="card">
-		  				<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/swift.svg" alt="Card image cap">
-		  				<div class="card-body">
-		    				<h4 class="card-title">Swift</h4>
-		    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  				</div>
-		  			</a>
-		  		</div>
-
-		  		<div class="col">
-		  			<a href='subject/5' class="card">
-		  				<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/javascript.svg" alt="Card image cap">
-		  				<div class="card-body">
-		    				<h4 class="card-title">JavaScript</h4>
-		    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  				</div>
-		  			</a>
-		  		</div>
-
-		  		<div class="col">
-		  			<a href='subject/6' class="card">
-		  				<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/ruby.svg" alt="Card image cap">
-		  				<div class="card-body">
-		    				<h4 class="card-title">Ruby</h4>
-		    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  				</div>
-		  			</a>
-		  		</div>
-
-		  		<div class="col">
-		  			<a href='subject/7' class="card">
-		  				<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/php.svg" alt="Card image cap">
-		  				<div class="card-body">
-		    				<h4 class="card-title">PHP</h4>
-		    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  				</div>
-		  			</a>
-		  		</div>
-
-		  		<div class="col">
-		  			<a href='subject/8' class="card">
-		  				<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/python.svg" alt="Card image cap">
-		  				<div class="card-body">
-		    				<h4 class="card-title">Python</h4>
-		    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  				</div>
-		  			</a>
-		  		</div>
-
-		  		<div class="col">
-		  			<a href='subject/9' class="card">
-		  				<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/webtask.svg" alt="Card image cap">
-		  				<div class="card-body">
-		    				<h4 class="card-title">課題</h4>
-		    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  				</div>
-		  			</a>
-		  		</div>
+				@endforeach
 			</div>
 		</div>
 		</body>

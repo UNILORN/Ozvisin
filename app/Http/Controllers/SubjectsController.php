@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Code;
+use App\Subject;
 
 class SubjectsController extends Controller
 {
     public function index() {
-      return view('subject/index');
+        $subject = Subject::all();
+        return view('subject/index',compact("subject"));
     }
 
     public function show($id){

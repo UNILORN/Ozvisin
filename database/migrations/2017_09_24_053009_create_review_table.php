@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCodeTable extends Migration
+class CreateReviewTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateCodeTable extends Migration
      */
     public function up()
     {
-        Schema::create('code', function (Blueprint $table) {
+        Schema::create('review', function (Blueprint $table) {
             $table->increments('id');
-            $table->string("title");
-            $table->string("URL");
-            $table->text("comment");
             $table->integer("user_id");
-            $table->integer("subject_id");
+            $table->integer("company_id");
+            $table->integer("code_id");
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateCodeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('code');
+        Schema::dropIfExists('review');
     }
 }

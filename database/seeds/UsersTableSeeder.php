@@ -15,15 +15,12 @@ class UsersTableSeeder extends Seeder
     	DB::table('users')->truncate();
         
         $data = [];
-
-        foreach (range(1,10) as $key => $value) {
-        	$data[] = [
-        		'id'=>$value,
-        		'name' => $faker->name,
-            	'email' => $faker->email,
-            	'password' => bcrypt('secret'),
-        	];	
-        }
+        $data[] = [
+            'id'=>1,
+            'name' => $faker->name,
+            'email' => $faker->email,
+            'password' => bcrypt('pass'),
+        ];
 
         DB::table('users')->insert($data);
         
