@@ -17,6 +17,8 @@ class CreateSubjectTable extends Migration
             $table->increments('id');
             $table->string("title");
             $table->string("lang");
+            $table->string("img")->default("webtask.png");
+            $table->string("detail");
             $table->integer("company_id")->nullable;
             $table->timestamps();
         });

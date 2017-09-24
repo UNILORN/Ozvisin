@@ -38,20 +38,23 @@
 	</head>
 
 	<body>
-		<div class="row">
-			<div style="margin-left: 30px">
-				<a href="/code/{{ $id }}/create">投稿する</a>
+		<div class="container">
+
+			<div class="row">
+				<div style="margin-left: 30px">
+					<a href="/code/{{ $id }}/create" class="btn btn-primary">投稿する</a>
+				</div>
 			</div>
+			@foreach($code as $codes)
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">{{ $codes->title }}</h4>
+						<p class="card-text">{{ $codes->comment }}</p>
+						<a href="{{ $codes->URL  }}" class="card-link btn btn-primary" target="_blank">CodeReview!!</a>
+					</div>
+				</div>
+			@endforeach
 		</div>
-		@foreach($code as $codes)
-		<div class="card">
-  			<div class="card-body">
-    			<h4 class="card-title">{{ $codes->title }}</h4>
-    			<p class="card-text">{{ $codes->comment }}</p>
-			    <a href="{{ $codes->URL  }}" class="card-link" target="_blank">CodeReview!!</a>
-  			</div>
-		</div>
-		@endforeach
 
 	</body>
 </html>
