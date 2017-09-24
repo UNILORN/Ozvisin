@@ -37,6 +37,12 @@ Route::group(['prefix' => 'company'], function () {
   Route::get('/password/reset/{token}', 'CompanyAuth\ResetPasswordController@showResetForm');
 });
 
+Route::get('/code/{id}/create', 'CodesController@create');
+Route::post('/code', 'CodesController@store');
+
+Route::get('/subject', 'SubjectsController@index');
+Route::get('/subject/{id}', 'SubjectsController@show');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
