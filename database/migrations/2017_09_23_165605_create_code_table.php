@@ -20,7 +20,6 @@ class CreateCodeTable extends Migration
             $table->text("comment");
             $table->integer("user_id");
             $table->integer("subject_id");
-            $table->integer("is_company_id")->nullable();
             $table->timestamps();
         });
     }

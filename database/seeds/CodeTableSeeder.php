@@ -26,8 +26,7 @@ class CodeTableSeeder extends Seeder
                     'URL' => "http://google.com",
                     'comment' => "コメントは＊＊です",
                     'user_id' => 1,
-                    'subject_id' => $key+1,
-                    'is_company_id' => mt_rand(1,4),
+                    'subject_id' => $key+1
                 ];
             }
         }
