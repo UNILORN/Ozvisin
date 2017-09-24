@@ -23,6 +23,10 @@ Route::group(['prefix' => 'company'], function () {
   Route::get('/register', 'CompanyAuth\RegisterController@showRegistrationForm')->name('register');
   Route::post('/register', 'CompanyAuth\RegisterController@register');
 
+  Route::get('/code', 'CompanyCode\CodeController@code')->name('code');
+  Route::get('/sub/create', 'CompanySub\CreateController@create')->name('create');
+  Route::get('/review', 'CompanyReview\ReviewController@review')->name('review');
+
   Route::post('/password/email', 'CompanyAuth\ForgotPasswordController@sendResetLinkEmail')->name('password.request');
   Route::post('/password/reset', 'CompanyAuth\ResetPasswordController@reset')->name('password.email');
   Route::get('/password/reset', 'CompanyAuth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
