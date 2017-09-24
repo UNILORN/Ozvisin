@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title></title>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">OZvisin</a>
+  <a class="navbar-brand" href="/">OZvisin</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -51,7 +51,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <a href='./sub/subject' class="card">
+            <a href='./sub/1' class="card">
                 <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/c.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">C言語</h4>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="col">
-            <a href='#' class="card">
+            <a href='./sub/2' class="card">
             <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/c%2B%2B.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">C++</h4>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="col">
-            <a href='#' class="card">
+            <a href='./sub/3' class="card">
                 <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/java.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Java</h4>
@@ -81,7 +81,7 @@
         </div>
 
         <div class="col">
-            <a href='#' class="card">
+            <a href='./sub/4' class="card">
                 <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/swift.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Swift</h4>
@@ -91,7 +91,7 @@
         </div>
 
         <div class="col">
-            <a href='#' class="card">
+            <a href='./sub/5' class="card">
                 <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/javascript.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">JavaScript</h4>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="col">
-            <a href='#' class="card">
+            <a href='./sub/6' class="card">
                 <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/ruby.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Ruby</h4>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="col">
-            <a href='#' class="card">
+            <a href='./sub/7' class="card">
                 <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/php.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">PHP</h4>
@@ -121,7 +121,7 @@
         </div>
 
         <div class="col">
-            <a href='#' class="card">
+            <a href='./sub/8' class="card">
                 <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/python.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">Python</h4>
@@ -131,7 +131,7 @@
         </div>
 
         <div class="col">
-            <a href='#' class="card">
+            <a href='./sub/9' class="card">
                 <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/webtask.svg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title">課題</h4>

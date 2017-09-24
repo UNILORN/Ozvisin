@@ -5,6 +5,7 @@ namespace App\Http\Controllers\CompanySub;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Company;
 use Illuminate\Http\Request;
+use App\Code;
 
 class CreateController extends Controller
 {
@@ -33,8 +34,9 @@ class CreateController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function subject()
+    public function subject($id)
     {
-        return view('company.sub.subject');
+        $codes = Code::where("subject_id",$id)->get();
+        return view('company.sub.subject', compact("codes"));
     }
 }

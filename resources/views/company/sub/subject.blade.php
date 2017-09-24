@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<title></title>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">OZvisin</a>
+			<a class="navbar-brand" href="/company/sub">OZvisin</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -38,13 +38,15 @@
 	</head>
 
 	<body>
+		@foreach($codes as $code)
 		<div class="card">
   			<div class="card-body">
-    			<h4 class="card-title">title</h4>
-    			<h6 class="card-subtitle mb-2 text-muted">name</h6>
-    			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			    <a href="../code" class="card-link">review</a>
+    			<h4 class="card-title">{{ $code->title }}</h4>
+    			<h6 class="card-subtitle mb-2 text-muted">{{ $code->user->name }}さん</h6>
+    			<p class="card-text">{{ $code->comment }}</p>
+			    <a href="{{ $code->URL }}" class="card-link" target="_blank">Githubへ</a>
   			</div>
 		</div>
+		@endforeach
 	</body>
 </html>
