@@ -13,8 +13,28 @@ class CreateController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function ichiran()
+    {
+        return view('company.sub.ichiran');
+    }
+
+    /**
+     * Display the form to request a password reset link.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function create()
     {
         return view('company.sub.create');
+    }
+
+    /**
+     * Display the form to request a password reset link.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function subject()
+    {
+        return view('company.sub.subject');
     }
 }
