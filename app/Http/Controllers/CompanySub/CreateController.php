@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\CompanySub;
 
 use App\Http\Controllers\Controller;
+use App\Subject;
 use Illuminate\Foundation\Company;
 use Illuminate\Http\Request;
 use App\Code;
@@ -16,7 +17,8 @@ class CreateController extends Controller
      */
     public function ichiran()
     {
-        return view('company.sub.ichiran');
+        $subject = Subject::all();
+        return view('company.sub.ichiran',compact("subject"));
     }
 
     /**

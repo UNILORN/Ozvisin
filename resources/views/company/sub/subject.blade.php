@@ -38,15 +38,24 @@
 	</head>
 
 	<body>
+	<div class="container">
 		@foreach($codes as $code)
 		<div class="card">
   			<div class="card-body">
     			<h4 class="card-title">{{ $code->title }}</h4>
     			<h6 class="card-subtitle mb-2 text-muted">{{ $code->user->name }}さん</h6>
     			<p class="card-text">{{ $code->comment }}</p>
-			    <a href="{{ $code->URL }}" class="card-link" target="_blank">Githubへ</a>
+			    <a href="{{ $code->URL }}" class="card-link github_button" target="_blank">
+					<img src="/image/github_logo.png" width="50px" alt="">
+				</a>
   			</div>
 		</div>
 		@endforeach
+	</div>
+	<style>
+		.github_button:hover{
+			opacity: 0.4;
+		}
+	</style>
 	</body>
 </html>
